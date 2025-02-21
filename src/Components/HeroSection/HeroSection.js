@@ -13,12 +13,14 @@ const HeroSection = () => {
             description: "Put your knowledge to the test and prove your expertise across a wide range of topics in this engaging game."
         },
         {
-            title: "Another Exciting Title",
-            description: "More engaging text related to the second image."
+            title: "Challenge Friends and Family",
+            description: "Compete against your friends and family to see who's the ultimate quiz champion. Track your scores and climb the leaderboard.",
+            quizFeature: "Real-time multiplayer quizzes and leaderboards to fuel your competitive spirit."
         },
         {
-            title: "A Third Title Here",
-            description: "Even more compelling text for the third image."
+            title: "Learn While You Play",
+            description: "Our quizzes are designed to be both fun and educational. Expand your knowledge base with every question.",
+            quizFeature: "Detailed explanations after each question to enhance your understanding."
         }
     ];
 
