@@ -74,20 +74,23 @@ const HistoryCardList = ({ quizData }) => {
   return (
     <div className="quiz-bar-list">
       <h1 className="quiz-heading">Recent Activity</h1>
-      {quizData.map((quiz, index) => {
-        console.log(`Mapping quiz at index ${index}:`, quiz); // Console log inside map
-        return (
-          <HistoryCard
-            key={index}
-            quizTitle={quiz.quizTitle}
-            quizDescription={quiz.quizDescription}
-            answers={quiz.answers}
-            questions={quiz.questions}
-            quizIndex={quiz.quizIndex}
-            icon={quiz.quizIconSrc}
-          />
-        );
-      })}
+      {quizData && quizData.length > 0 ? (
+        quizData.map((quiz, index) => {
+          return (
+            <HistoryCard
+              key={index}
+              quizTitle={quiz.quizTitle}
+              quizDescription={quiz.quizDescription}
+              answers={quiz.answers}
+              questions={quiz.questions}
+              quizIndex={quiz.quizIndex}
+              icon={quiz.quizIconSrc}
+            />
+          );
+        })
+      ) : (
+        <p className="no-activity-message">No recent activity found.</p>
+      )}
     </div>
   );
 };

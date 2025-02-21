@@ -69,6 +69,12 @@
 .button-container {
   margin-left: auto;
 }
+.no-activity-message {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #888; /* Or any color you prefer */
+}
 
 @media (max-width: 1024px) {
   .quiz-bar {
