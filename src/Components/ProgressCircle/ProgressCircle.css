@@ -1,0 +1,47 @@
+.circular-progress-bar {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-text {
+  font-size: 1.2em; /* Adjust as needed */
+  font-weight: bold;
+  fill: #333; /* Dark grey text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) { /* Tablet */
+  .circular-progress-bar {
+    width: 80px; /* Reduce size */
+    height: 80px; /* Reduce size */
+  }
+
+  .progress-text {
+    font-size: 1em; /* Reduce font size */
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .circular-progress-bar {
+    width: 60px; /* Further reduce size */
+    height: 60px; /* Further reduce size */
+  }
+
+  .progress-text {
+    font-size: 0.9em; /* Further reduce font size */
+  }
+}
+
+@media (max-width: 480px) { /* Small mobile */
+  .circular-progress-bar {
+    width: 50px; /* Further reduce size */
+    height: 50px; /* Further reduce size */
+  }
+
+  .progress-text {
+    font-size: 0.8em; /* Further reduce font size */
+  }
+}

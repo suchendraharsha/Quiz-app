@@ -1,0 +1,100 @@
+/* Instructions.css */
+.instructions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Changed to min-height for better content flow */
+    background-color: #f4f4f4;
+    padding: 20px; /* Added general padding */
+}
+
+.instructions-content {
+    background-color: white;
+    padding: 20px; /* Consistent padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 95%; /* Use almost full width on mobile */
+    max-width: 600px; /* Reduced max-width for better mobile flow */
+}
+
+.instructions-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Adjusted heading size */
+}
+
+.instructions-content ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.instructions-content li {
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    line-height: 1.6;
+    font-size: 0.95em; /* Adjusted list item font size */
+    align-items: start;
+}
+
+.start-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto 0;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width button */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles (Simplified) */
+@media (max-width: 768px) { /* Mobile */
+    .instructions-content {
+        padding: 15px;
+    }
+
+    .instructions-content h2 {
+        font-size: 1.4em;
+    }
+
+    .instructions-content li {
+        font-size: 0.9em;
+    }
+
+    .start-button {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) { /* Small Mobile */
+    .instructions-content {
+        padding: 10px;
+    }
+
+    .instructions-content h2 {
+        font-size: 1.3em;
+    }
+
+    .instructions-content li {
+        font-size: 0.7em;
+        margin-bottom: 12px;
+    }
+
+    .start-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,28 @@
+.answer-option {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .answer-option:hover {
+    background-color: #e9ecef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+ /*  .answer-option.selected {
+    
+  } */
+  
+  .answer-option.correct {
+    background-color: #4caf50; /* Green for correct */
+    color: white;
+  }
+  
+  .answer-option.wrong {
+    background-color: #f44336; /* Red for wrong */
+    color: white;
+  }

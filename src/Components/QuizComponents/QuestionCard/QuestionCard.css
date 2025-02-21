@@ -1,0 +1,79 @@
+.question-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.question-number {
+  font-weight: bold;
+}
+
+.quit {
+  color: #888;
+  cursor: pointer;
+}
+
+.question-text {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) { /* Tablet */
+  .question-card {
+    max-width: 90%; /* Adjust card width */
+    padding: 18px; /* Reduce padding */
+    margin: 15px auto; /* Adjust margin */
+  }
+
+  .question-text {
+    font-size: 1em; /* Reduce question text size */
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .question-card {
+    max-width: 95% !important; /* Further adjust card width */
+    padding: 15px !important; /* Further reduce padding */
+    margin: 10px auto !important;  /* Further adjust margin */
+  }
+
+  .question-text {
+    font-size: 0.95em; /* Further reduce question text size */
+  }
+
+  .question-header {
+    flex-direction: column; /* Stack header elements */
+    align-items: flex-start; /* Align header elements to the start */
+  }
+
+  .quit {
+    margin-top: 10px; /* Add margin to quit button */
+  }
+}
+
+@media (max-width: 480px) { /* Small mobile */
+  .question-card {
+    padding: 12px !important; /* Further reduce padding */
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+
+  .question-text {
+    font-size: 0.9em; /* Further reduce question text size */
+  }
+}
