@@ -59,7 +59,7 @@ This React-based quiz application allows users to attempt time based quiz and tr
 
 ## Link to Deployed App
 
-[Deployed Quiz App](<your_deployed_app_link>)
+[Deployed Quiz App](https://quiz-app-dun-five.vercel.app/)
 
 ## Technologies Used
 
