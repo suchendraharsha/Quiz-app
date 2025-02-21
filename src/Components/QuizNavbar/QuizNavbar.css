@@ -1,8 +1,7 @@
-/* QuizNavbar.css */
 .quiz-navbar {
-    background-color: #f0f0f0; /* Light gray background */
-    padding: 10px 20px; /* Adjust padding */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
@@ -11,8 +10,8 @@
 .navbar-content {
     display: flex;
     width:100%;
-    justify-content: space-between; /* Space content evenly */
-    align-items: center; /* Vertically align content */
+    justify-content: space-between;
+    align-items: center;
     
 }
 
@@ -22,22 +21,22 @@
 }
 
 .profile-picture {
-    width: 40px; /* Adjust size as needed */
+    width: 40px;
     height: 40px;
-    border-radius: 50%; /* Make it circular */
-    overflow: hidden; /* Ensure image stays within circle */
+    border-radius: 50%;
+    overflow: hidden;
     margin-right: 10px;
 }
 
 .profile-picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover area */
+    object-fit: cover;
 }
 
 .user-details {
     display: flex;
-    flex-direction: column; /* Arrange name and ID vertically */
+    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     margin-left: 10px;
@@ -45,16 +44,16 @@
 
 .user-name {
     font-weight: 500;
-    color: #333; /* Dark gray text */
+    color: #333;
 }
 
 .user-id {
     font-size: 0.9em;
-    color: #666; /* Slightly lighter gray */
+    color: #666;
 }
 
 .score-info {
-    background-color: #007bff; /* Blue background */
+    background-color: #007bff;
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
@@ -143,24 +142,23 @@
     border:none;
   }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) { /* Tablet */
+@media (max-width: 1024px) {
     .navbar-content {
-        flex-wrap: wrap; /* Allow wrapping */
-        justify-content: center; /* Center content */
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .user-info, .score-info {
-        width: 70px; /* Full width */
-        margin-bottom: 10px; /* Add space between elements */
-        justify-content: center; /* Center content */
+        width: 70px;
+        margin-bottom: 10px;
+        justify-content: center;
     }
 }
 
-@media (max-width: 768px) { /* Mobile */
+@media (max-width: 768px) {
     .navbar-content {
-        flex-direction: column; /* Stack vertically */
-        align-items: center; /* Center align */
+        flex-direction: column;
+        align-items: center;
     }
 
     .score-info {
@@ -183,7 +181,7 @@
     }
 }
 
-@media (max-width: 480px) { /* Small mobile */
+@media (max-width: 480px) {
     .user-info{
         width:100%;
         justify-content: flex-start;

@@ -70,44 +70,43 @@
   margin-left: auto;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) { /* Tablet */
+@media (max-width: 1024px) {
   .quiz-bar {
-    padding: 12px; /* Reduce padding */
+    padding: 12px;
   }
 
   .quiz-icon {
-    width: 35px; /* Reduce icon size */
+    width: 35px;
     height: 35px;
   }
 
   .title {
-    font-size: 1em; /* Reduce title size */
+    font-size: 1em;
   }
 
   .description {
-    font-size: 0.85em; /* Reduce description size */
+    font-size: 0.85em;
   }
 }
 
-@media (max-width: 768px) { /* Mobile */
+@media (max-width: 768px) {
   .quiz-bar {
-    padding: 10px; /* Further reduce padding */
+    padding: 10px;
     display: flex;
     flex-direction: row;
   }
 
   .quiz-bar-content {
-    flex-direction: row; /* Ensure row layout for icon and text */
+    flex-direction: row;
     width:100%;
   }
 
   .icon-container {
-    margin-right: 10px; /* Reduce icon margin */
+    margin-right: 10px;
   }
 
   .quiz-icon {
-    width: 60px; /* Further reduce icon size */
+    width: 60px;
     height: 60px;
     object-fit:cover;
   }
@@ -117,41 +116,41 @@
   }
 
   .title {
-    font-size: 0.95em; /* Further reduce title size */
+    font-size: 0.95em;
   }
 
   .description {
-    font-size: 0.8em; /* Further reduce description size */
+    font-size: 0.8em;
   }
 
   .quiz-heading {
-    font-size: 22px; /*reduce heading size*/
+    font-size: 22px;
   }
 
 }
 
-@media (max-width: 480px) { /* Small mobile */
+@media (max-width: 480px) {
   .quiz-bar {
-    padding: 8px; /* Further reduce padding */
+    padding: 8px;
     display: flex;
     flex-direction: row;
   }
 
   .quiz-icon {
-    width: 25px; /* Further reduce icon size */
+    width: 25px;
     height: 25px;
   }
 
   .title {
-    font-size: 0.9em; /* Further reduce title size */
+    font-size: 0.9em;
   }
 
   .description {
-    font-size: 0.75em; /* Further reduce description size */
+    font-size: 0.75em;
   }
 
   .quiz-heading {
-    font-size: 20px; /*reduce heading size*/
+    font-size: 20px;
   }
 
 }

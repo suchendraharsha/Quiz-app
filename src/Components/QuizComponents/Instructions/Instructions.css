@@ -1,26 +1,25 @@
-/* Instructions.css */
 .instructions-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Changed to min-height for better content flow */
+    min-height: 100vh;
     background-color: #f4f4f4;
-    padding: 20px; /* Added general padding */
+    padding: 20px;
 }
 
 .instructions-content {
     background-color: white;
-    padding: 20px; /* Consistent padding */
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 95%; /* Use almost full width on mobile */
-    max-width: 600px; /* Reduced max-width for better mobile flow */
+    width: 95%;
+    max-width: 600px;
 }
 
 .instructions-content h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 1.5em; /* Adjusted heading size */
+    font-size: 1.5em;
 }
 
 .instructions-content ol {
@@ -34,9 +33,9 @@
 }
 
 .instructions-content li {
-    margin-bottom: 15px; /* Increased margin for better spacing */
+    margin-bottom: 15px;
     line-height: 1.6;
-    font-size: 0.95em; /* Adjusted list item font size */
+    font-size: 0.95em;
     align-items: start;
 }
 
@@ -51,16 +50,15 @@
     display: block;
     margin: 20px auto 0;
     transition: background-color 0.3s ease;
-    width: 100%; /* Full width button */
-    box-sizing: border-box; /* Include padding and border in width */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .start-button:hover {
     background-color: #0056b3;
 }
 
-/* Responsive Styles (Simplified) */
-@media (max-width: 768px) { /* Mobile */
+@media (max-width: 768px) {
     .instructions-content {
         padding: 15px;
     }
@@ -79,7 +77,7 @@
     }
 }
 
-@media (max-width: 480px) { /* Small Mobile */
+@media (max-width: 480px) {
     .instructions-content {
         padding: 10px;
     }

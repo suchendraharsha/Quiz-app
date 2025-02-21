@@ -24,13 +24,9 @@ const QuizContentPage = () => {
   const [showResults, setShowResults] = useState(false);
   const [userAnswers, setUserAnswers] = useState([]);
   const [timeLeft, setTimeLeft] = useState(30); // 30 seconds per question
-
-  
-
   const [db, setDb] = useState(null);
-  
   const [loading, setLoading] = useState(true);
-
+// useEffect to initialize IndexedDB
 useEffect(() => {
     const initDB = async () => {
       try {
@@ -147,12 +143,13 @@ useEffect(() => {
 
 
   
-
+  // Function to handle starting the quiz, hiding instructions and starting timer.
   const handleStartQuiz = () => {
     setShowInstructions(false);
     setQuizStarted(true);
   };
 
+  // useEffect to reset timer and answer states when the question changes.
   useEffect(() => {
     setTimeLeft(30);
     setAnswersChecked(false);
@@ -161,6 +158,7 @@ useEffect(() => {
     setIsAnswerCorrect(null);
   }, [currentQuestionIndex]);
 
+  // useEffect to handle the timer countdown.
   useEffect(() => {
     if (quizStarted && timeLeft > 0 && !answersChecked) { // Check for quizStarted
       const timer = setTimeout(() => {
@@ -172,10 +170,12 @@ useEffect(() => {
     }
   }, [timeLeft, answersChecked, currentQuestionIndex, quizStarted]); 
 
+  // Function to handle changes in the fill-in-blank answer input.
   const handleAnswerChange = (event) => {
     setUserAnswer(event.target.value);
   };
 
+  // Function to handle submitting the fill-in-blank answer.
   const handleSubmitAnswer = () => {
     if (currentQuestion.type === "fillInBlank") {
       const isCorrect = userAnswer.trim().toLowerCase() === currentQuestion.correctAnswer.toLowerCase();
@@ -184,6 +184,7 @@ useEffect(() => {
     }
   };
 
+  // Function to handle selecting a multiple-choice option.
   const handleOptionSelect = (index) => {
     setSelectedOption(index);
     setOptionClicked(true);
@@ -191,10 +192,12 @@ useEffect(() => {
     setCorrectAnswer(currentQuestion.correctAnswerIndex);
   };
 
+  // Function to handle viewing the quiz results.
   const handleSeeResult = () => {
     alert("See Result clicked!");
   };
-
+  
+  // Function to restart the quiz.
   const handleRestartQuiz = () => {
     setCurrentQuestionIndex(0);
     setSelectedOption(null);
@@ -208,11 +211,13 @@ useEffect(() => {
     setTimeLeft(30);
   };
 
+  // Function to go back to the quiz selection page.
   const handleGoBackToQuizPage = () => {
     setShowResults(false);
     navigate("/quiz");
   };
 
+  // Function to handle moving to the next question.
   const handleNext = () => {
     let newUserAnswers = [...userAnswers]; // Create a copy of the userAnswers
   
@@ -301,6 +306,7 @@ useEffect(() => {
     }
   };
 
+  //Function to store quiz results in indexed DB.
   const storeQuizResults = async (quiz, userAnswers, quizIndex, db) => {
     try {
       if(!db){

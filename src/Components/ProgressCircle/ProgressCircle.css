@@ -1,47 +1,46 @@
 .circular-progress-bar {
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .progress-text {
-  font-size: 1.2em; /* Adjust as needed */
+  font-size: 1.2em;
   font-weight: bold;
-  fill: #333; /* Dark grey text */
+  fill: #333;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) { /* Tablet */
+@media (max-width: 1024px) {
   .circular-progress-bar {
-    width: 80px; /* Reduce size */
-    height: 80px; /* Reduce size */
+    width: 80px;
+    height: 80px;
   }
 
   .progress-text {
-    font-size: 1em; /* Reduce font size */
+    font-size: 1em;
   }
 }
 
-@media (max-width: 768px) { /* Mobile */
+@media (max-width: 768px) {
   .circular-progress-bar {
-    width: 60px; /* Further reduce size */
-    height: 60px; /* Further reduce size */
+    width: 60px;
+    height: 60px;
   }
 
   .progress-text {
-    font-size: 0.9em; /* Further reduce font size */
+    font-size: 0.9em;
   }
 }
 
-@media (max-width: 480px) { /* Small mobile */
+@media (max-width: 480px) {
   .circular-progress-bar {
-    width: 50px; /* Further reduce size */
-    height: 50px; /* Further reduce size */
+    width: 50px;
+    height: 50px;
   }
 
   .progress-text {
-    font-size: 0.8em; /* Further reduce font size */
+    font-size: 0.8em;
   }
 }

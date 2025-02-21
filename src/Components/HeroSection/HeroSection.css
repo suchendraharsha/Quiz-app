@@ -1,4 +1,3 @@
-/* HeroSection.css */
 .two-halves-container {
     display: flex;
     align-items: center;
@@ -116,42 +115,41 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) { /* Tablet */
+@media (max-width: 1024px) {
     .text-half {
-        padding: 30px; /* Reduced padding */
-        margin-right: 15px; /* Reduced margin */
+        padding: 30px;
+        margin-right: 15px;
     }
 
     .text-content {
-        max-width: 90%; /* Increased max-width */
+        max-width: 90%;
     }
 
     .text-content h1 {
-        font-size: 2.2em; /* Slightly reduced font size */
+        font-size: 2.2em;
     }
 
     .text-content p {
-        font-size: 1.2em; /* Slightly reduced font size */
+        font-size: 1.2em;
     }
 
     .get-started-button {
-        padding: 8px 16px; /* Reduced button padding */
-        font-size: 1em; /* Reduced button font size */
+        padding: 8px 16px;
+        font-size: 1em;
     }
 }
 
-@media (max-width: 768px) { /* Mobile */
+@media (max-width: 768px) {
     .two-halves-container {
-        flex-direction: column; /* Stack halves vertically */
+        flex-direction: column;
         height: auto;
     }
 
     .image-half,
     .text-half {
         flex: 1;
-        margin-right: 0; /* Remove right margin */
-        border-radius: 0; /* Remove border radius */
+        margin-right: 0;
+        border-radius: 0;
         width: 100% !important;
     }
 
@@ -183,13 +181,13 @@
         margin-top: 0px;
     }
     .arrow-button {
-        padding: 8px 12px; /* Reduced button padding */
-        font-size: 1em; /* Reduced button font size */
-        margin: 0 8px; /* Reduced button margin */
+        padding: 8px 12px;
+        font-size: 1em;
+        margin: 0 8px;
     }
 }
 
-@media (max-width: 480px) { /* Small mobile */
+@media (max-width: 480px) {
     
 
     .text-content h1 {
@@ -201,13 +199,13 @@
     }
 
     .get-started-button {
-        padding: 6px 12px; /* Further reduced button padding */
-        font-size: 0.9em; /* Further reduced button font size */
+        padding: 6px 12px;
+        font-size: 0.9em;
     }
 
     .arrow-button {
-        padding: 6px 6px; /* Further reduced button padding */
-        font-size: 0.9em; /* Further reduced button font size */
-        margin: 0 6px; /* Further reduced button margin */
+        padding: 6px 6px;
+        font-size: 0.9em;
+        margin: 0 6px;
     }
 }
